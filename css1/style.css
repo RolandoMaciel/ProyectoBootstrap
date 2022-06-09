@@ -1,0 +1,294 @@
+/*Estilo General */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+/*-----HEADER-----*/
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #9999A1
+}
+.header img {
+    width: 100px;
+    height: 100px;
+    background-position:80px;
+}
+
+.header nav ul {
+    display: flex;
+    list-style: none;
+}
+
+.header nav ul li {
+    margin: 10px;
+}
+
+.header nav ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    color:rgb(255, 255, 255);
+    text-shadow: 2px 2px 2px #000000;
+}
+
+/*-----MAIN-----*/
+.hero {
+    color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: calc(100vh - 150px);
+    background: linear-gradient(rgba(0, 0, 0, 0.485), rgba(0, 0, 0, 0.542)), url(../imagenes/banner.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+
+.hero h1 {
+    font-size: 60px;
+    font-weight: bold;
+}
+
+.hero p {
+    font-size: 30px;
+    text-align: center;
+}
+
+.hero a:hover {
+    background-color:#ffffff;
+    color: rgba(196, 44, 44, 0.425);
+    border-radius: 5px;
+}
+
+
+/*----- GRID -----*/
+.grid_contenedores_pizza{
+    display: grid;
+    grid-template-areas: "art sab por";
+    grid-template-columns: repeat(3, 1fr);
+    
+}
+
+.artesanal{
+    grid-area: art;
+    justify-self: center;
+}
+
+.sabores{
+    grid-area: sab;
+    justify-self: center;
+}
+
+.porciones{
+    grid-area: por;
+    justify-self: center;
+}
+
+.icono_pizza {
+    width: 350px;
+    height: 275px;
+}
+
+.icono_pizza img:hover {
+    -webkit-transform: rotate(360deg);
+    transition: 2s ease-in-out;
+}
+
+.img_pizza{
+    width: 200px;
+    height: 200px;
+    border-radius: 40px;   
+}
+
+.flex-ico{
+    display: flex;
+    justify-content: center;
+}
+
+.tit_pizza {
+    text-align: center;
+}
+
+
+.section_two > div {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.tituloParrafo {
+    font-size: 30px;
+    text-align: center;
+}
+
+.parrafo1 {
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+}
+
+.section_two > div img {
+    width: 500px;
+    height: 600px;
+    margin: 20px;
+    border-radius: 40px;
+    box-shadow: -9px 15px 52px 19px rgba(192, 146, 146, 0.37);
+}
+
+/*-----MAIN CONTACTO-----*/
+
+.text {
+    margin: 20px;
+    text-align: center;
+}
+
+.contacto {
+    text-align: center;
+}
+
+.contacto img {
+    width: 500px;
+    height: 555px;
+    margin: 25px;
+    padding: 25px;
+}
+
+/*-----MAIN NOSOTROS-----*/
+
+.nosotros img {
+    padding: 10px;
+    margin: 20px;
+    width: 500px;
+    height: 600px;
+    border-radius: 20px;
+}
+
+.nosotros {
+    font-size: 35px;
+    text-align: center;
+}
+
+.nosotros div p {
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+/*-----MAIN FRANQUICIAS-----*/
+
+.franquicias h1 {
+    font-size: 60px;
+    text-align: center;
+}
+.franquicias h2 {
+    font-size: 40px;
+    text-align: center;
+}
+
+.franquicias {
+    font-size: 30px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.franquicias img {
+    padding: 10px;
+    margin: 10px;
+    width: 600px;
+    height: 600px;
+    border-radius: 20px;
+}
+
+/*-----MAIN PRODUCTOS-----*/
+
+.productos {
+    font-size: 40px;
+    text-align: center;
+}
+
+.productos img {
+    width: 200px;
+    height: 200px;
+    border-radius: 60px;
+    box-shadow: -9px 15px 52px 19px rgba(192, 146, 146, 0.37);
+}
+
+.productos_two {
+    font-size: 40px;
+    text-align: center;
+}
+
+.productos_two img {
+    border-radius: 10px;
+    transition: all 400ms ease;
+}
+
+.productos_two img:hover {
+    transform: scale(1.1);
+}
+
+/*-----FOOTER-----*/
+.footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #666;
+}
+
+.footer ul li a {
+    padding: 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 900;
+    color: #ffffff;
+    text-shadow: 2px 2px 2px #000000;
+}
+
+.footer div  a img {
+    width: 50px;
+    height: 50px;
+    border-radius: 40px;
+    margin: 0px;
+    padding: 5px; 
+}
+
+@media (max-width: 400px) {
+    /*-----index-----*/
+    .header {
+        flex-direction: column;
+    }
+    .header nav ul {
+    flex-direction: column;
+    }
+    .grid_contenedores_pizza{
+        grid-template-columns: (1fr);
+        grid-template-areas: 
+        "art"
+        "sab"
+        "por";
+    }
+    .contacto {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .franquicias div {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        }
+    .nosotros {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
