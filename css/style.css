@@ -100,8 +100,8 @@
 }
 
 .icono_pizza img:hover {
-    -webkit-transform: rotate(360deg);
     transition: 2s ease-in-out;
+    -webkit-transform: rotate(360deg);
 }
 
 .img_pizza{
