@@ -64,10 +64,14 @@
     text-align: center;
 }
 
+.hero a {
+    text-decoration: none;
+}
+
 .hero a:hover {
-    background-color:#ffffff;
-    color: rgba(196, 44, 44, 0.425);
-    border-radius: 5px;
+    background-color:#8a7b7b;
+    color: rgba(0, 0, 0, 0.425);
+    border-radius: 10px;
 }
 
 
